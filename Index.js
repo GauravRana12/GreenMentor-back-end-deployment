@@ -7,7 +7,7 @@ const connection = require('./Config/db');
 const TaskRoute = require('./Routes/TaskRoute');
 const app=express();
 app.use(cors({
-    origin : ["http://localhost:3000"],
+    origin : ["http://localhost:3000","https://magenta-empanada-445938.netlify.app"],
     credentials: true
 }))
 
