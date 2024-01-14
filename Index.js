@@ -19,7 +19,7 @@ app.get('/',(req,res)=>{
 app.use('/user',UserRoute);
 app.use('/task',TaskRoute);
 
-app.listen(8080,async ()=>{
+app.listen(process.env.PORT,async ()=>{
 try {
     await connection;
     console.log('started port');
